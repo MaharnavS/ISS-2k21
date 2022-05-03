@@ -1,0 +1,30 @@
+h1.name
+{
+	font-family: "Times New Roman", Times, serif;
+	color: LightSalmon;
+	text-align: center;
+	margin-top: 5rem;
+	font-size: 60px;
+}
+
+p.about
+{
+	font-family: "Times New Roman", Times, serif;
+	text-align: left;
+	margin-top: 13rem;
+	font-size: 22px;
+	color: LightSalmon;
+	margin-right: 40rem;
+	margin-left: 8rem;
+}
+
+img.profile
+{
+	margin-right: 6rem;
+}
+
+img.skills
+{
+	padding-left: 2rem;
+	padding-right: 2rem;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style> 
+			table, th, td 
+			{
+				margin:20% auto;
+				font-size: 2rem;
+				color: ghostwhite;
+				border: 5px solid #a60530;
+				border-collapse: collapse;
+			}
+		</style>
+	</head>
+	<body style="background: linear-gradient(to right, #a60530 -20%, #240b36 90%);">
+		<script> 
+			const subjects = [];
+			alert("Hello !, Please enter subject names one at a time in the following prompts....");
+			for (var i = 0; i < 18; i++) 
+				{
+					subjects[i] = prompt("Please enter " + i + " subject", "Wizardary");
+//					subjects[i] = i;
+					if(subjects[i] === "") 
+						subjects[i]="Free";
+				}
+			
+		</script>
+		<table>
+			<tr>
+				<th align="center">Time</th>
+				<th align="center">Monday</th>
+				<th align="center">Tuesday</th>
+				<th align="center">Wednesday</th>
+				<th align="center">Thursday</th>
+				<th align="center">Friday</th>
+				<th align="center">Saturday</th>
+			</tr>
+			<tr>
+				<td align="center">8:30 - 10:00</td>
+				<td align="center" class="1"></td>
+				<td align="center" class="2"></td>
+				<td align="center" class="3"></td>
+				<td align="center" class="1"></td>
+				<td align="center" class="2"></td>
+				<td align="center" class="3"></td>
+			</tr>
+			<tr>
+				<td align="center">10:00 - 11:30</td>
+				<td align="center" class="4"></td>
+				<td align="center" class="5"></td>
+				<td align="center" class="6"></td>
+				<td align="center" class="4"></td>
+				<td align="center" class="5"></td>
+				<td align="center" class="6"></td>
+			</tr>
+			<tr>
+				<td align="center">11:30 - 1:00</td>
+				<td align="center" class="7"></td>
+				<td align="center" class="8"></td>
+				<td align="center" class="9"></td>
+				<td align="center" class="7"></td>
+				<td align="center" class="8"></td>
+				<td align="center" class="9"></td>
+			</tr>
+			<tr> 
+				<td align="center">1:00 - 2:00</td>
+				<td align="center">Lunch</td>
+				<td align="center">Lunch</td>
+				<td align="center">Lunch</td>
+				<td align="center">Lunch</td>
+				<td align="center">Lunch</td>
+				<td align="center">Lunch</td>
+			</tr>
+			<tr>
+				<td align="center">2:00 - 3:30</td>
+				<td align="center" class="10"></td>
+				<td align="center" class="11"></td>
+				<td align="center" class="12"></td>
+				<td align="center" class="10"></td>
+				<td align="center" class="11"></td>
+				<td align="center" class="12"></td>
+			</tr>
+			<tr>
+				<td align="center">3:30 - 5:00</td>
+				<td align="center" class="13"></td>
+				<td align="center" class="14"></td>
+				<td align="center" class="15"></td>
+				<td align="center" class="13"></td>
+				<td align="center" class="14"></td>
+				<td align="center" class="15"></td>
+			</tr>
+			<tr>
+				<td align="center">5:00 - 6:30</td>
+				<td align="center" class="16"></td>
+				<td align="center" class="17"></td>
+				<td align="center" class="18"></td>
+				<td align="center" class="16"></td>
+				<td align="center" class="17"></td>
+				<td align="center" class="18"></td>
+			</tr>
+		</table>
+		<script>
+			for (var i = 0; i < 18; i++) 
+				{
+					var elem = document.getElementsByClassName(i+1);
+					elem[0].innerText = subjects[i];
+					elem[1].innerText = subjects[i];
+				}
+		</script>
+	</body>
+</html>
