@@ -1,0 +1,24 @@
+(select N as Node, 'Root' as Type
+from Q2
+where P is null)
+
+union
+
+(select N as Node, 'Leaf' as Type
+from Q2
+where N not in (select distinct P
+        from Q2
+        where P is not null) 
+    and P is not null)
+    
+union
+
+(select N as Node, 'Inner' as Type
+from Q2
+where N in (select distinct P
+        from Q2
+        where P is not null)
+    and P is not null)
+    
+order by Node;
+

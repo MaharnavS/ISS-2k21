@@ -1,0 +1,95 @@
+body
+{
+	background-color: black;
+}
+ul.nav_bar
+{
+	font-family: "Times New Roman", Times, serif;
+	color: white;
+	text-align: center;
+	font-size:2vmax;
+	list-style-type: none;
+}
+ul.nav_bar li
+{
+	display: inline-block;
+	text-align: center;
+	padding-left: 1vmax;
+	padding-right: 1vmax;
+}
+h1.heading
+{
+	font-family: "Times New Roman", Times, serif;
+	color: LightSalmon;
+	text-align: center;
+	font-size: 4vmax;
+}
+h2.list_heading
+{
+	font-family: "Times New Roman", Times, serif;
+	color: LightSalmon;
+	text-align: left;
+	font-size:2vmax;
+}
+p.random_text
+{
+	font-family: "Times New Roman", Times, serif;
+	color: white;
+	text-align: justify;
+	margin-left: 4%;
+	margin-right: 4%;
+	width: 92%;
+	font-size: 1.4vmax;
+}
+p.quote
+{
+	font-family: "Lucida Handwriting", cursive;
+	color: white;
+	text-align: center;
+	font-size:2vmax;
+}
+ul
+{
+	list-style-type: disc;
+	color: white
+	font-family: "Times New Roman", Times, serif;
+	align-items: left;
+	margin-left: 2%;
+}
+ol
+{
+	color: white
+	font-family: "Times New Roman", Times, serif;
+	align-items: left;
+	margin-left: 2%;
+}
+li
+{
+	color: white;
+	font-size: 1.4vmax;
+}
+img
+{
+	border-radius:10px;
+	margin-left: 30%; 
+	margin-right: 30%;
+	width: 40%; 
+	align-content: center;
+}
+a.external
+{
+	color: HotPink;
+}
+h6.foot
+{
+	font-family: "Times New Roman", Times, serif;
+	color: white;
+	text-align: left;
+	margin-left: 1%;
+	font-size: 1.4vmax;
+}
+hr.line
+{
+	border-top: 3px solid lightsalmon;
+	border-bottom: transparent;
+}
